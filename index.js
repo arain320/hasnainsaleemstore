@@ -7,7 +7,7 @@ const productRouter = require("./routes/productRoute");
 const userRouter = require("./routes/userRouter");
 const errorMessage = require("./middleWare/error");
 const cookieParser = require("cookie-parser");
-
+const path = require("path");
 const app = express();
 app.use(errorMessage);
 const PORT = process.env.PORT || 5000;
